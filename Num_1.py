@@ -5,10 +5,10 @@ from math import *
 # x=3
 # y=4
 # z=5
-# a=(sqrt(abs((pow(x,2))-6))-sqrt(abs((pow(y,2))-6)))/(1+((pow(x,2))/((pow(x,2))+1))+((pow(y,2))/((pow(x,3))+1)))
+# a=(sqrt(abs((pow(x,2))-6))-sqrt(abs((pow(y,2))-5)))/(1+((pow(x,2))/((pow(y,3))+1))+((pow(y,2))/((pow(x,3))+1)))
 # b=(pow(x,3))*((pow(atan(z),3))+exp(1))
-# print(a)
-# print(b)
+# print(f"Функция а: {a}")
+# print(f"Функция b: {b}")
 
 # №2
 # a=2
@@ -16,18 +16,18 @@ from math import *
 # c=3
 #
 # x=-0.5
-# while x <-0.4:
+# while x <=-0.4:
 #     F=pow(x+a,1/3)+((c*(pow(x,2)))/(b+x))
-#     print(F)
+#     print(f"Функция f(x)= {F}")
 #     x+=0.1
 
 # №3
 
-# x=1
-# while x <3:
-#     F=pow(cos(sin(1/pow(x,2))),2)
-#     print(F)
-#     x+=0.1
+x=1
+while x <= 3:
+    F=pow(cos(sin(1/pow(x,2))),2)
+    print(F)
+    x+=0.1
 
 # №4
 
@@ -35,7 +35,7 @@ from math import *
 # x2=4
 # x3=6
 #
-# y1=4
+# y1="L"
 # y2=2
 # y3=6
 #
@@ -65,8 +65,8 @@ from math import *
 
 
 # a=int(input("Введите а: "))
-# while a>1:
-#     a = int(input("Число не должно быть больше 1, повторите ввод: "))
+# while a<1:
+#     a = int(input("Число не должно быть меньше 1, повторите ввод: "))
 # b=int(input("Введите b: "))
 # c=int(input("Введите c: "))
 # while c>100:
@@ -107,25 +107,25 @@ from math import *
 # S = int(input("Введите расстояние между автомобилями: "))
 # T = int(input("Введите прошедшее время: "))
 # while T>100:
-#      T = int(input("Число не должно быть больше 100, повторите ввод: "))
+#      T = int(input("Скорость не должна быть больше 100, повторите ввод: "))
 #
 # S_otvet=S+v1*T+v2*T
-# print(f"Расстояние между автомобилями через {T:.4f} часов равно:{S_otvet:.4f}")
+# print(f"Расстояние между автомобилями через {T:.4f} часов равно:{S_otvet:.4f} км")
 
 # №9
 
-cerosin_count=5
-days=24
-hours=6
-cerosin=120
-
-chas_pyat=cerosin/144
-cerosin_by_hour=chas_pyat/cerosin_count
-nine_cerosin_by_hour=cerosin_by_hour*9
-day_cerosin=nine_cerosin_by_hour*8
-print(f"Всего пять керосинок горело: {days*hours:.2f}(ч)")
-print(f"В час на пять керосинок уходило: {chas_pyat:.2f}(л)")
-print(f"На одну керосинку в час уходило: {cerosin_by_hour:.2f}(л)")
-print(f"На девять керосинок в час будет уходить: {nine_cerosin_by_hour:.2f}(л)")
-print(f"В день (8ч) на девять керосинок надо: {day_cerosin:.2f}(л)")
-print(f"Тогда, 216л керосина хватит на: {216/day_cerosin:.2f}(дней)")
+# cerosin_count=5
+# days=24
+# hours=6
+# cerosin=120
+#
+# chas_pyat=cerosin/144
+# cerosin_by_hour=chas_pyat/cerosin_count
+# nine_cerosin_by_hour=cerosin_by_hour*9
+# day_cerosin=nine_cerosin_by_hour*8
+# print(f"Всего пять керосинок горело: {days*hours:.2f}(ч)")
+# print(f"В час на пять керосинок уходило: {chas_pyat:.2f}(л)")
+# print(f"На одну керосинку в час уходило: {cerosin_by_hour:.2f}(л)")
+# print(f"На девять керосинок в час будет уходить: {nine_cerosin_by_hour:.2f}(л)")
+# print(f"В день (8ч) на девять керосинок надо: {day_cerosin:.2f}(л)")
+# print(f"Тогда, 216л керосина хватит на: {216/day_cerosin:.2f}(дней)")
