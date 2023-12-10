@@ -83,3 +83,5 @@ multi_hash_tables.insert_into_tables(Books)
 # Вывод отсортированных хэш-таблиц
 print(multi_hash_tables.always_return_one())
 multi_hash_tables.print_sorted_tables()
+
+#Дополнительное задание находится в отчёте, на сайт нельзя кидать больше 2 файлов.
